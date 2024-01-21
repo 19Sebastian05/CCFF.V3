@@ -8,3 +8,5 @@ ERROR: 2024/01/20 20:41:54 G:/CFF_PROJECT/backend-ccff/pkg/config/events/applica
 ERROR: 2024/01/20 20:42:38 G:/CFF_PROJECT/backend-ccff/pkg/config/events/application_service.go:62: 218437c2-5235-4f37-8a4c-18e022f55974  - don't meet validations: id isn't uuid
 ERROR: 2024/01/20 20:42:55 G:/CFF_PROJECT/backend-ccff/pkg/config/events/application_service.go:54: ae8e911b-52b6-4a16-994c-7e8936aea157  - couldn't update Events : Dev-cff:108
 ERROR: 2024/01/20 20:42:55 G:/CFF_PROJECT/backend-ccff/pkg/config/events/application_service.go:62: ed5b131f-5d8c-4419-83fe-da6c6764d6d8  - don't meet validations: id isn't uuid
+ERROR: 2024/01/20 23:44:48 G:/CFF_PROJECT/backend-ccff/pkg/config/events/application_service.go:54: b1fd50be-2136-4c8e-9ed0-c48e04da615d  - couldn't update Events : Dev-cff:108
+ERROR: 2024/01/20 23:45:03 G:/CFF_PROJECT/backend-ccff/pkg/config/events/application_service.go:54: 364af109-4a93-4d9f-b058-f6e1bdb46192  - couldn't update Events : Dev-cff:108

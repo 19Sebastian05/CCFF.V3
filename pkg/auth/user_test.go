@@ -1,9 +1,8 @@
-package test
+package auth
 
 import (
 	"backend-ccff/internal/dbx"
 	"backend-ccff/internal/models"
-	"backend-ccff/pkg/auth"
 	"fmt"
 	"github.com/google/uuid"
 	"strings"
@@ -15,7 +14,7 @@ func TestCreateUser(t *testing.T) {
 	db := dbx.GetConnection()
 	txID := uuid.New().String()
 	usr := models.User{}
-	serviceLogin := auth.NewServerAuth(db, &usr, txID)
+	serviceLogin := NewServerAuth(db, &usr, txID)
 
 	id := uuid.New().String()
 
@@ -33,7 +32,7 @@ func TestUpdateUser(t *testing.T) {
 	db := dbx.GetConnection()
 	txID := uuid.New().String()
 	usr := models.User{}
-	serviceLogin := auth.NewServerAuth(db, &usr, txID)
+	serviceLogin := NewServerAuth(db, &usr, txID)
 
 	id := strings.ToLower("5D815348-0DDD-42D9-8B36-FF9468C0DDC8")
 
@@ -68,7 +67,7 @@ func TestGetUsersByID(t *testing.T) {
 	db := dbx.GetConnection()
 	txID := uuid.New().String()
 	usr := models.User{}
-	serviceLogin := auth.NewServerAuth(db, &usr, txID)
+	serviceLogin := NewServerAuth(db, &usr, txID)
 
 	id := strings.ToLower("5D815348-0DDD-42D9-8B36-FF9468C0DDC8")
 
@@ -85,7 +84,7 @@ func TestGetAllUsers(t *testing.T) {
 	db := dbx.GetConnection()
 	txID := uuid.New().String()
 	usr := models.User{}
-	serviceLogin := auth.NewServerAuth(db, &usr, txID)
+	serviceLogin := NewServerAuth(db, &usr, txID)
 
 	_, err := serviceLogin.Users.GetAllUsers()
 	if err != nil {

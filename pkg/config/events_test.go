@@ -1,9 +1,8 @@
-package events
+package config
 
 import (
 	"backend-ccff/internal/dbx"
 	"backend-ccff/internal/models"
-	"backend-ccff/pkg/config"
 	"fmt"
 	"github.com/google/uuid"
 	"strings"
@@ -16,7 +15,7 @@ func TestCreateEvent(t *testing.T) {
 	db := dbx.GetConnection()
 	txID := uuid.New().String()
 	usr := models.User{}
-	serviceConfig := config.NewServerConfig(db, &usr, txID)
+	serviceConfig := NewServerConfig(db, &usr, txID)
 
 	id := uuid.New().String()
 
@@ -33,10 +32,10 @@ func TestUpdateEvent(t *testing.T) {
 	db := dbx.GetConnection()
 	txID := uuid.New().String()
 	usr := models.User{}
-	serviceConfig := config.NewServerConfig(db, &usr, txID)
+	serviceConfig := NewServerConfig(db, &usr, txID)
 
 	id := strings.ToLower("18A20310-F7ED-41C5-9A87-0DFD5227DB4D")
-
+	// id := uuid.New().String()
 	_, cod, err := serviceConfig.Event.UpdateEvents(id, "event test", "event test", time.Now(), 0, 0, id)
 	if err != nil {
 		t.Fatalf("no se pudo validar la actualizacion de evento, cod: %d error: %v", cod, err)
@@ -67,7 +66,7 @@ func TestGetEventsByID(t *testing.T) {
 	db := dbx.GetConnection()
 	txID := uuid.New().String()
 	usr := models.User{}
-	serviceConfig := config.NewServerConfig(db, &usr, txID)
+	serviceConfig := NewServerConfig(db, &usr, txID)
 
 	id := uuid.New().String()
 
@@ -84,7 +83,7 @@ func TestGetAllEvents(t *testing.T) {
 	db := dbx.GetConnection()
 	txID := uuid.New().String()
 	usr := models.User{}
-	serviceConfig := config.NewServerConfig(db, &usr, txID)
+	serviceConfig := NewServerConfig(db, &usr, txID)
 
 	_, err := serviceConfig.Event.GetAllEvents()
 	if err != nil {
