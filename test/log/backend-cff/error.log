@@ -1,0 +1,10 @@
+ERROR: 2024/01/20 20:28:55 G:/CFF_PROJECT/backend-ccff/pkg/config/events/application_service.go:54: 94d2769b-9e92-456c-aebe-dc591dd815d5  - couldn't update Events : Dev-cff:108
+ERROR: 2024/01/20 20:39:42 G:/CFF_PROJECT/backend-ccff/pkg/config/events/application_service.go:50: eec90501-6fb8-4772-8b66-ea461e2af0b9  - don't meet validations: id: non zero value required;user_id: non zero value required
+ERROR: 2024/01/20 20:39:42 G:/CFF_PROJECT/backend-ccff/pkg/config/events/application_service.go:62: 49f33e8e-dd70-4487-afc1-561ae3db9c48  - don't meet validations: id isn't uuid
+ERROR: 2024/01/20 20:41:13 G:/CFF_PROJECT/backend-ccff/pkg/config/events/application_service.go:50: eed8b11b-c06b-4197-a630-919838725aed  - don't meet validations: id: non zero value required;user_id: non zero value required
+ERROR: 2024/01/20 20:41:13 G:/CFF_PROJECT/backend-ccff/pkg/config/events/application_service.go:62: 94bd2c5d-053c-4cdd-9a5a-c4c3c4aa089a  - don't meet validations: id isn't uuid
+ERROR: 2024/01/20 20:41:54 G:/CFF_PROJECT/backend-ccff/pkg/config/events/application_service.go:50: a4ea49c3-94e3-4dd6-884b-4408d8e52296  - don't meet validations: id: 18A20310-F7ED-41C5-9A87-0DFD5227DB4D does not validate as uuid
+ERROR: 2024/01/20 20:41:54 G:/CFF_PROJECT/backend-ccff/pkg/config/events/application_service.go:62: 41c7a560-5aec-40c5-8455-22c61ed40375  - don't meet validations: id isn't uuid
+ERROR: 2024/01/20 20:42:38 G:/CFF_PROJECT/backend-ccff/pkg/config/events/application_service.go:62: 218437c2-5235-4f37-8a4c-18e022f55974  - don't meet validations: id isn't uuid
+ERROR: 2024/01/20 20:42:55 G:/CFF_PROJECT/backend-ccff/pkg/config/events/application_service.go:54: ae8e911b-52b6-4a16-994c-7e8936aea157  - couldn't update Events : Dev-cff:108
+ERROR: 2024/01/20 20:42:55 G:/CFF_PROJECT/backend-ccff/pkg/config/events/application_service.go:62: ed5b131f-5d8c-4419-83fe-da6c6764d6d8  - don't meet validations: id isn't uuid
