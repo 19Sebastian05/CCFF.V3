@@ -1,4 +1,4 @@
-package test
+package events
 
 import (
 	"backend-ccff/internal/dbx"
