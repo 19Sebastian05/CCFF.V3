@@ -1,0 +1,58 @@
+# Ignore compiled binaries and executables
+*.exe
+*.out
+*.dll
+*.so
+*.dylib
+
+# Ignore go generated files
+*.test
+*.prof
+*.cover
+/coverage.out
+
+# Ignore binary artifacts
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.ico
+*.eot
+*.mov
+*.mp4
+*.webm
+*.swf
+*.pdf
+*.zip
+*.gz
+*.tar.gz
+*.tar
+*.rar
+
+# Ignore vendor directory
+/vendor/
+
+# Ignore IDE-specific files and directories
+.idea/
+.vscode/
+
+# Ignore system and temporary files
+Thumbs.db
+.DS_Store
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Ignore configuration files
+*.yaml
+*.yml
+*.json
+
+# Ignore compiled Cgo binaries
+*.cgo
+*.c
+*.so
+*.a
+*.o
+*.test
